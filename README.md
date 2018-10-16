@@ -1,5 +1,9 @@
 # coincap
 
+## Overview
+
+<img src="coin.png" height="500">
+
 ## Project setup
 ```
 npm install
