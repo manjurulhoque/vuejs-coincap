@@ -1,4 +1,4 @@
-# ecommerce
+# coincap
 
 ## Project setup
 ```
