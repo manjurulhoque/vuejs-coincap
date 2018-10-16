@@ -17,7 +17,7 @@
                     </div>
                     <div class="column">
                         <div class="ui segment banner">
-                        Total BTC Dominance: {{ data.quotes.USD.bitcoin_percentage_of_market_cap }} %
+                        Total BTC Dominance: {{ data.bitcoin_percentage_of_market_cap }} %
                         </div>
                     </div>
                 </div>
