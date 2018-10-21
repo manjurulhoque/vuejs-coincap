@@ -1,6 +1,6 @@
 <template>
     <div class="ui segment coin desktop">
-        <router-link to="/" class="ui grid">
+        <a @click="gotoDetails" class="ui grid">
             <div class="one wide column segment__bold">{{ coin.rank }}</div>
             <div class="two wide column segment__primary">
                 <img :src="`https://chasing-coins.com/api/v1/std/logo/${coin.symbol}`" class="segment__crypto-logo">
@@ -18,7 +18,7 @@
                 :class="[isValuePositive(coin.quotes.USD.percent_change_1h) ? 'segment__positive' : 'segment__negative']">
                 {{coin.quotes.USD.percent_change_24h}}
             </div>
-        </router-link>
+        </a>
     </div>
 </template>
 
@@ -28,6 +28,10 @@ export default {
     methods: {
         isValuePositive(number) {
             return number > 0;
+        },
+        gotoDetails() {
+            //console.log(this.coin);
+            this.$router.push({ name: 'coinDetails', params: {coin: this.coin, website_slug: this.coin.website_slug }})
         }
     }
 }

@@ -3,6 +3,7 @@
 ## Overview
 
 <img src="coin.png" height="500">
+<img src="two.png" height="500">
 
 ## Project setup
 ```
